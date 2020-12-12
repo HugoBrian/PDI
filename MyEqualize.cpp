@@ -43,10 +43,6 @@ int main(int argc, char** argv) {
 
         cv::normalize(histGray, histGray, 0, 256, cv::NORM_MINMAX, -1, cv::Mat());
 
-        for (int i = 0; i < 256; i++) {
-            std::cout << histGray.at<float>(i) << " ";
-        }
-        std::cout << std::endl << std::endl << std::endl;
 
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
